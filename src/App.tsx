@@ -2,6 +2,7 @@ import { ConfigProvider } from 'vant';
 import { defineComponent, KeepAlive, Suspense } from 'vue';
 import { RouterView } from 'vue-router';
 import './App.css';
+import './static/iconfont/iconfont.css';
 export default defineComponent({
   name: 'App',
   setup() {

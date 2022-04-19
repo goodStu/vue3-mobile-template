@@ -1,4 +1,5 @@
 
+@import url('./assets/style/vant.css');
 
 a {
   color: var(--van-blue);

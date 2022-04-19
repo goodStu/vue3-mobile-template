@@ -1,0 +1,5 @@
+/* vant主题定制 */
+:root {
+  --van-primary-color: #0065B2;
+  --van-border-radius-sm:8px;
+}

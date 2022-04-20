@@ -30,7 +30,11 @@ export default defineComponent({
     };
     return () => (
       <CPage>
-        <NavBar left-arrow onClick-left={onClickLeft}></NavBar>
+        <NavBar
+          leftText="欢迎来到北明移动办公"
+          left-arrow
+          onClick-left={onClickLeft}
+        ></NavBar>
         <h1 class={styles.weclome}>
           <i class="iconfont icon-weixiao"></i>
           登录

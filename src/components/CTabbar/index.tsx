@@ -11,20 +11,21 @@ export default defineComponent({
       tokenRef.value = store.state.user.token;
     });
     return () => (
-      <Tabbar
-        route
-        safeAreaInsetBottom
-        fixed={false}
-        style={{ borderTop: '1px solid #ddd' }}
-      >
-        <TabbarItem to={{ name: 'Home' }}>
-          <Icon name="wap-home-o" size="40" />
+      <Tabbar route safeAreaInsetBottom fixed={false}>
+        <TabbarItem to={{ name: 'Home' }} icon="wap-home-o">
+          首页
         </TabbarItem>
-        <TabbarItem to={{ name: 'ResourceList' }}>
-          <Icon name="orders-o" size="40" />
+        <TabbarItem to={{ name: 'ResourceList' }} icon="records">
+          待办
         </TabbarItem>
-        <TabbarItem to={tokenRef.value ? { name: 'My' } : { name: 'Login' }}>
-          <Icon name="user-o" size="40" />
+        <TabbarItem to={{ name: 'myApplyList' }} icon="completed">
+          我的申请
+        </TabbarItem>
+        <TabbarItem
+          to={tokenRef.value ? { name: 'My' } : { name: 'Login' }}
+          icon="user-o"
+        >
+          我的
         </TabbarItem>
       </Tabbar>
     );
